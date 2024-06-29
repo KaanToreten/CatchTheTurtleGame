@@ -62,7 +62,7 @@ def countdown():
     global timer
     timer -= 1
     timer_writer.clear()
-    timer_writer.write(f"Zaman: {timer}", move=False, align='center', font=FONT)
+    timer_writer.write(f"Time: {timer}", move=False, align='center', font=FONT)
     if timer > 0:
         wn.ontimer(countdown, 1000)
     else:
